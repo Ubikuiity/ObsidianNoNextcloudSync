@@ -15,8 +15,6 @@ export default class MyPlugin extends Plugin {
 
 		this.initialMDate = (await fsp.stat(this.workspacePath)).mtime;
 
-		console.log(`v3`)
-		console.log(`Watching over workspace file ${this.workspacePath}`);
 		console.log(`initiale modDate : ${this.initialMDate.toLocaleString()}`);
 		// this.fileWatcher = fs.watch(this.workspacePath, this.resetModDate);
 
@@ -42,7 +40,7 @@ export default class MyPlugin extends Plugin {
 				throw err;  // Else we throw the error
 			}
 		})(this.workspacePath, this.initialMDate);
-		console.log(`Watching over workspace file to unSync it`);
+		console.log(`Watching over workspace file to unSync it to avoid conflict ${this.workspacePath}`);
 	}
 
 	onunload() {

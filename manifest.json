@@ -1,9 +1,9 @@
 {
-	"id": "No-NextCloud-Sync",
-	"name": "No NextCloud Sync",
+	"id": "Clean-NextCloud-Sync",
+	"name": "Clean NextCloud Sync",
 	"version": "1.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "This plugin aims at deactivating the synchcronisation of workspace file in Obsidian",
+	"description": "This plugin aims at deactivating the synchronisation of workspace file in Obsidian",
 	"author": "Ubikuiity",
-	"isDesktopOnly": false
+	"isDesktopOnly": true
 }
